@@ -36,18 +36,17 @@ modificaPuntos = function (numero) {
 modificaIntento = function () {
     intento = intento - 1;
     cambiarTexto("lblIntento", intento);
-    if (intento <= 0 || puntos > 20) {
-        limpiar();
+    if (intento ==0 ) {
         estaResultado();
     }
 }
 
 estaResultado = function () {
-    if (puntos > 20) {
+    if (puntos > 15) {
         cambiarTexto("lblResu", "Ganador");
     }
     else {
-        cambiarTexto("lblResu", "GAME OVER NO SUPERO LOS 20 PUNTOS");
+        cambiarTexto("lblResu", "GAME OVER NO SUPERO LOS 15 PUNTOS");
     }
 
 }
